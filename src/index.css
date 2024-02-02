@@ -94,9 +94,24 @@ button {
   top: 0;
   font-family: 'Montserrat';
   font-size: 40pt;
-  color: #333;
   font-weight: 300;
   letter-spacing: 0.05em;
+  background: linear-gradient(to right, hsl(0, 6%, 10%) 0, hsl(324, 76%, 90%) 10%, hsl(324, 72%, 72%) 20%, hsl(326, 90%, 38%) 10%, hsl(326, 88%, 14%) 10%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 500px;
+  }
+  100% {
+    background-position: 600px;
+  }
 }
 
 .new_release_list {
