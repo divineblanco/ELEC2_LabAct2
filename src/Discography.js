@@ -42,7 +42,7 @@ const albumData = [
 function Discogrophy(){
     return(
       <div className='container'>
-        <div class="cont discography_view wow fadeInUp" data-wow-delay="0.2s">
+        <div class="cont discography_view">
           <div className='title'>DISCOGRAPHY</div>
           <div className='new_release_list'>
             {albumData.map((album) => (
